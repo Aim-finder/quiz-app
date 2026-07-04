@@ -1,0 +1,102 @@
+body {
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#progress {
+    color: #6b7280;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#timer {
+    font-weight: 600;
+    color: #ef4444;
+    margin-bottom: 15px;
+}
+
+/* QUESTION */
+#question {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+/* OPTIONS GRID (2 per row) */
+#options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* OPTION BUTTONS */
+#options button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+
+    background: #ffffff;
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+#options button:hover {
+    background: #eef2ff;
+    border-color: #6366f1;
+    transform: translateY(-2px);
+}
+
+/* SELECTED OPTION */
+#options button.selected {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+/* BUTTONS */
+#confirm,
+#next {
+    margin-top: 20px;
+    padding: 10px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* CONFIRM BUTTON */
+#confirm {
+    background: #10b981;
+    color: white;
+}
+
+#confirm:hover {
+    background: #059669;
+}
+
